@@ -1,0 +1,221 @@
+
+/* /////////HELPERS\\\\\\\\\ */
+.d-flex{
+    display: flex;
+}
+
+body{
+    /* background-color: blue; */
+    justify-content: center;
+    align-content: flex-end;
+    background-color: hotpink;
+    font-size:28px;
+    background-image: linear-gradient(-45deg, #d53369 0%, #caa453 100%);;
+    font-family: Nunito;
+}
+
+.btn{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    outline: none;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+#empty {
+    cursor: default;
+}
+
+.nav__menu__window:hover div{
+    background-size: cover;
+}
+
+.mini__btn{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(251, 86, 82);
+    cursor: pointer;
+    background-image: url(../img/resource-02.png);
+    background-size: 0;
+}
+
+.mini__btn:nth-child(2){
+    background-color: rgb(254, 191, 65);
+    background-image: url(../img/resource-03.png);
+    background-size: 0;
+    
+}
+
+.mini__btn:nth-child(3){
+    background-color: rgb(52, 200, 73);
+    background-image: url(../img/resource-04.png);
+    background-size: 0;
+}
+
+.btn__dark{
+    background-color: rgb(33, 44, 64);
+}
+
+.btn__light{
+    background-color: rgb(244, 253, 251);
+}
+
+.btn__green{
+    background-color: rgb(44, 211, 164);
+    color: white;
+}
+/* /////////MAIN\\\\\\\\\ */
+.calculator__container{
+    width: 300px;
+    height: 535px;
+    background-color: rgb(244, 253, 251);
+    border-radius: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.top__container{
+    /* border: 1px solid yellow; */
+    height: 165px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.nav__menu{
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__menu__window{
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    width: 50px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+.btn__container{
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    background-color: white;
+}
+
+.display{
+    height: 70px;
+    width: 100%;
+    text-align: right;
+    font-size: 50px;
+}
+
+
+
+/* Switch Button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    transform: scale(0.6);
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(222, 225, 228);
+    -webkit-transition : .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* input:checked + .slider {
+    background-color: rgb(43, 210, 163);
+} */
+.sliderActive {
+    background-color: rgb(43, 210, 163);
+    /* transform: translateX(26px); */
+}
+.sliderActive:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* input:focus + .slider {
+    box-shadow: 0 0 1px rgb(0,255,0 );
+} */
+
+/* input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+} */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* //////// 👻 DARK MODE 👻 \\\\\\\\\ */
+
+.darkMode{
+    background-color: rgb(33, 44, 64);
+    /* transition: 0.2s ease; */
+}
+
+.darkMode2{
+    background-color: rgb(47, 58, 80);
+    /* transition: 0.2s ease; */
+
+}
+
+.darkModeText{
+    color: rgb(33, 178, 136);
+    /* transition: 0.2s ease; */
+}
+
+.transition{
+    transition: 0.3s ease;
+}
