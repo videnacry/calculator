@@ -1,4 +1,3 @@
-
 /* /////////HELPERS\\\\\\\\\ */
 .d-flex{
     display: flex;
@@ -32,8 +31,13 @@ body{
     opacity: .7;
 }
 
-#empty {
+/* #empty {
     cursor: default;
+} */
+
+#empty {
+    align-items: center;
+    justify-content: center;
 }
 
 .nav__menu__window:hover div{
@@ -87,6 +91,7 @@ body{
 }
 
 .top__container{
+    position: relative;
     height: 165px;
     flex-direction: column;
     box-sizing: border-box;
@@ -124,9 +129,16 @@ body{
     width: 100%;
     text-align: right;
     font-size: 50px;
+    opacity:0;
 }
 
-
+.display__visible{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 5px;
+    top: 50%;
+    right: 0;
+}
 
 /* Switch Button */
 .switch {
@@ -201,6 +213,11 @@ body{
 .darkModeText{
     color: rgb(33, 178, 136);
     /* transition: 0.2s ease; */
+}
+
+.darkBodyBackground{
+    background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+    transition: 0.9s ease;
 }
 
 .transition{
